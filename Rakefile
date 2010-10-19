@@ -5,12 +5,12 @@ begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
     gem.name = "liferay_webservices"
-    gem.summary = %Q{TODO: one-line summary of your gem}
-    gem.description = %Q{TODO: longer description of your gem}
+    gem.summary = %Q{The missing wrapper for liferay webservices}
+    gem.description = %Q{The missing wrapper for liferay webservices}
     gem.email = "ornelas.tulio@gmail.com"
     gem.homepage = "http://github.com/tulios/liferay_webservices"
-    gem.authors = ["tulios"]
-    gem.add_development_dependency "thoughtbot-shoulda", ">= 0"
+    gem.authors = ["Túlio Ornelas"]
+    # gem.add_development_dependency "thoughtbot-shoulda", ">= 0"
     # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
   end
   Jeweler::GemcutterTasks.new
