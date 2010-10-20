@@ -13,6 +13,9 @@ begin
     
     gem.add_dependency "savon", ">= 0.7.8"
     gem.add_dependency "activesupport", ">= 3.0.0"
+    gem.add_dependency "proxy_machine", ">= 0.0.3"
+    gem.add_dependency "nokogiri", ">= 1.4.3.1"
+    gem.add_dependency "open-uri"
     
     gem.add_development_dependency "rspec", ">= 1.2.9"
     # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings

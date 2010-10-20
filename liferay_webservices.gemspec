@@ -22,7 +22,12 @@ Gem::Specification.new do |s|
      "LICENSE",
      "README.rdoc",
      "Rakefile",
-     "lib/liferay_webservices.rb"
+     "VERSION",
+     "lib/liferay_webservices.rb",
+     "lib/liferay_webservices/service_object.rb",
+     "liferay_webservices.gemspec",
+     "spec/liferay_webservices_spec.rb",
+     "spec/resources/liferay_webservices.yml"
   ]
   s.homepage = %q{http://github.com/tulios/liferay_webservices}
   s.rdoc_options = ["--charset=UTF-8"]
