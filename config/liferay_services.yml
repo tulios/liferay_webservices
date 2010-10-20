@@ -1,0 +1,100 @@
+# All services described by liferay
+#
+wsrp_base_service: "WSRPBaseService"
+wsrp_portlet_management: "WSRPPortletManagementService"
+wsrp_registration: "WSRPRegistrationService"
+wsrp_description: "WSRPServiceDescriptionService"
+
+ig_image: "Portlet_IG_IGImageService"
+ig_folder: "Portlet_IG_IGFolderService"
+
+sc_framework_version: "Portlet_SC_SCFrameworkVersionService"
+sc_product_entry: "Portlet_SC_SCProductEntryService"
+sc_product_version: "Portlet_SC_SCProductVersionService"
+sc_license: "Portlet_SC_SCLicenseService"
+
+expando_column: "Portlet_Expando_ExpandoColumnService"
+expando_value: "Portlet_Expando_ExpandoValueService"
+
+shopping_item: "Portlet_Shopping_ShoppingItemService"
+shopping_coupon: "Portlet_Shopping_ShoppingCouponService"
+shopping_category: "Portlet_Shopping_ShoppingCategoryService"
+shopping_order: "Portlet_Shopping_ShoppingOrderService"
+
+dl_folder: "Portlet_DL_DLFolderService"
+dl_file_shortcut: "Portlet_DL_DLFileShortcutService"
+dl_file_entry: "Portlet_DL_DLFileEntryService"
+                      
+tasks_review: "Portlet_Tasks_TasksReviewService"
+tasks_proposal: "Portlet_Tasks_TasksProposalService"
+
+cal_event: "Portlet_Cal_CalEventService"       
+       
+mb_category: "Portlet_MB_MBCategoryService"
+mb_message: "Portlet_MB_MBMessageService"
+mb_message_flag: "Portlet_MB_MBMessageFlagService"
+mb_ban: "Portlet_MB_MBBanService"
+mb_thread: "Portlet_MB_MBThreadService"
+
+polls_vote: "Portlet_Polls_PollsVoteService"
+polls_question: "Portlet_Polls_PollsQuestionService"
+
+announcements_delivery: "Portlet_Announcements_AnnouncementsDeliveryService"
+announcements_entry: "Portlet_Announcements_AnnouncementsEntryService"
+announcements_flag: "Portlet_Announcements_AnnouncementsFlagService"
+         
+bookmarks_entry: "Portlet_Bookmarks_BookmarksEntryService"      
+bookmarks_folder: "Portlet_Bookmarks_BookmarksFolderService"
+
+tags_entry: "Portlet_Tags_TagsEntryService"
+tags_vocabulary: "Portlet_Tags_TagsVocabularyService"
+tags_source: "Portlet_Tags_TagsSourceService"
+tags_property: "Portlet_Tags_TagsPropertyService"
+tags_asset: "Portlet_Tags_TagsAssetService"
+
+ratings_entry: "Portlet_Ratings_RatingsEntryService"
+                
+journal_structure: "Portlet_Journal_JournalStructureService"
+journal_article: "Portlet_Journal_JournalArticleService"
+journal_feed: "Portlet_Journal_JournalFeedService"
+journal_template: "Portlet_Journal_JournalTemplateService"
+      
+flags_entry: "Portlet_Flags_FlagsEntryService"
+       
+blogs_entry: "Portlet_Blogs_BlogsEntryService"
+
+wiki_node: "Portlet_Wiki_WikiNodeService"
+wiki_page: "Portlet_Wiki_WikiPageService"
+
+user: "Portal_UserService"
+user_group: "Portal_UserGroupService"
+role: "Portal_RoleService"
+admin: "AdminService"
+membership_request: "Portal_MembershipRequestService"
+email_address: "Portal_EmailAddressService"
+organization: "Portal_OrganizationService"
+group: "Portal_GroupService"
+list_type: "Portal_ListTypeService"
+account: "Portal_AccountService"
+contact: "Portal_ContactService"
+phone: "Portal_PhoneService"
+address: "Portal_AddressService"
+country: "Portal_CountryService"
+region: "Portal_RegionService"
+layout_set: "Portal_LayoutSetService"
+class_name: "Portal_ClassNameService"
+user_group_role: "Portal_UserGroupRoleService"
+company: "Portal_CompanyService"
+                
+resource: "Portal_ResourceService"                                             
+plugin_setting: "Portal_PluginSettingService"               
+password_policy: "Portal_PasswordPolicyService"
+org_labor: "Portal_OrgLaborService"          
+portlet: "Portal_PortletService"                
+portal_service: "Portal_PortalService"           
+layout_service: "Portal_LayoutService"
+portlet_prefenrences: "Portal_PortletPreferencesService"
+permission: "Portal_PermissionService"
+resource_permission: "Portal_ResourcePermissionService"
+website: "Portal_WebsiteService"
+version: "Version"

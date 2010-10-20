@@ -1,6 +1,8 @@
 require 'rubygems'
 require 'rake'
 
+#require File.join(File.dirname(__FILE__), 'lib', '*.rb')
+
 begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
@@ -10,7 +12,7 @@ begin
     gem.email = "ornelas.tulio@gmail.com"
     gem.homepage = "http://github.com/tulios/liferay_webservices"
     gem.authors = ["Túlio Ornelas"]                       
-    
+    gem.files = FileList["{config,lib}/**/*"]
     gem.add_dependency "savon", ">= 0.7.8"
     gem.add_dependency "activesupport", ">= 3.0.0"
     gem.add_dependency "proxy_machine", ">= 0.0.3"
