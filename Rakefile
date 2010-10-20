@@ -9,8 +9,12 @@ begin
     gem.description = %Q{The missing wrapper for liferay webservices}
     gem.email = "ornelas.tulio@gmail.com"
     gem.homepage = "http://github.com/tulios/liferay_webservices"
-    gem.authors = ["Túlio Ornelas"]
-    # gem.add_development_dependency "thoughtbot-shoulda", ">= 0"
+    gem.authors = ["Túlio Ornelas"]                       
+    
+    gem.add_dependency "savon", ">= 0.7.8"
+    gem.add_dependency "activesupport", ">= 3.0.0"
+    
+    gem.add_development_dependency "rspec", ">= 1.2.9"
     # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
   end
   Jeweler::GemcutterTasks.new
