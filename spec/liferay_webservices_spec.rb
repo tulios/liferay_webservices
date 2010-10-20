@@ -33,21 +33,25 @@ describe LiferayWebservices do
       client.should respond_to :get_user_by_id
     end
     
-    it 'should include module methods' do
-      client = new_liferay_client :user
-      client.should_not be_nil
-      client.should respond_to :get_user_by_id
-    end
-    
   end  
   
   context 'about method execution on clients' do
+    include LiferayWebservices
     
     it 'should retrieve the result' do
-      LiferayWebservices.new_client :user
-      user = LiferayWebservices.execute(:get_user_by_id, :id => 10144) 
+      client = LiferayWebservices.new_client :user
+      user = LiferayWebservices.execute(client, :get_user_by_id, :id => 10144) 
       user.user_id.to_i.should == 10144 # href_value
       user.greeting.should == "Welcome Test Test!" # common value
+    end
+    
+    it 'should retrieve a proxy instance of client' do
+      client = new_liferay_client :user
+      client.proxied_class?.should be_true
+      
+      result = client.get_user_by_id :id => 10144
+      result.should_not be_nil
+      result.user_id.to_i.should == 10144
     end
     
   end

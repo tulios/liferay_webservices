@@ -11,6 +11,10 @@ module LiferayWebservices
   CONFIG_FILE_NAME = 'liferay_config.yml'
   SERVICES_FILE_NAME = 'liferay_services.yml'
                          
+  # =========================================================================================================
+  # ClassMethods
+  # =========================================================================================================
+  
   def self.included klass
     LiferayWebservices.init
   end
@@ -40,17 +44,66 @@ module LiferayWebservices
   end
   
   def self.new_client service_name
-    @client = Savon::Client.new "#{host}/#{services[service_name]}#{@wsdl ? '?wsdl' : ''}"
+    Savon::Client.new "#{host}/#{services[service_name]}#{@wsdl ? '?wsdl' : ''}"
   end
   
-  def new_liferay_client service_name
-    LiferayWebservices.new_client service_name
+  def self.execute client, method, params
+    ServiceObject.new(client, method) {|s| s.body = params }
   end
-
-  def self.execute method, params
-    ServiceObject.new(@client, method) {|s| s.body = params }
+  
+  # =========================================================================================================
+  # InstanceMethods
+  # =========================================================================================================
+  
+  def new_liferay_client service_name         
+    client = LiferayWebservices.new_client service_name
+    proxy_for client, 
+      :allow_dinamic => true, 
+      :avoid_original_execution => true,
+      :after_all => lambda {|client, result, method, args|
+        ServiceObject.new(client, method) {|s| s.body = *args }
+      }
   end
   
 end
 
 require 'liferay_webservices/service_object'
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

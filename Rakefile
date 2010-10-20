@@ -15,7 +15,7 @@ begin
     gem.files = FileList["{config,lib}/**/*"]
     gem.add_dependency "savon", ">= 0.7.8"
     gem.add_dependency "activesupport", ">= 3.0.0"
-    gem.add_dependency "proxy_machine", ">= 0.0.3"
+    gem.add_dependency "proxy_machine", ">= 0.0.4"
     gem.add_dependency "nokogiri", ">= 1.4.3.1"
     gem.add_dependency "open-uri"
     
